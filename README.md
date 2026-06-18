@@ -1,6 +1,6 @@
 # Yeboah's Law: Visual Abstract 2026
 
-**Paper:** "Yeboah's Law: A Dimensionless Threshold Criterion and Yeboah Constant for Predicting Separation in Dynamic Impact Cutting"  
+**Paper:** "Yeboah's Law: A Dimensionless Energy-Based Framework for Predicting Systemic Efficiency in Material Separation "  
 **Journal:** Journal of Manufacturing Processes, Elsevier  
 **Status:** Under Review  
 **Author:** Clifford Yeboah, Technical Senior High School for the Deaf, Mampong-Akuapem, Ghana  
