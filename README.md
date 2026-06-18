@@ -1,9 +1,9 @@
-# Yeboah's Law: Visual Abstract for JMP 2026
+# Yeboah's Law: Visual Abstract 2026
 
 **Paper:** "Yeboah's Law: A Dimensionless Threshold Criterion and Yeboah Constant for Predicting Separation in Dynamic Impact Cutting"  
 **Journal:** Journal of Manufacturing Processes, Elsevier  
 **Status:** Under Review  
-**Author:** C.K. Yeboah, Technical Senior High School for the Deaf, Mampong-Akuapem, Ghana  
+**Author:** Clifford Yeboah, Technical Senior High School for the Deaf, Mampong-Akuapem, Ghana  
 
 ### What is this?
 This repository hosts the Visual Abstract for the manuscript introducing Yeboah's Law:  
