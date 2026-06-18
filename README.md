@@ -21,4 +21,4 @@ If you use this concept, please cite the manuscript once published. Preprint DOI
 CC-BY-4.0 - Free to use with attribution to The Yeboah Inatitute, Technical SHS for the Deaf
 
 ### Contact
-[Your Email] | Technical Senior High School for the Deaf, Mampong-Akuapem
+[cliffordyeboah@yahoo.com] | Technical Senior High School for the Deaf, Mampong-Akuapem
