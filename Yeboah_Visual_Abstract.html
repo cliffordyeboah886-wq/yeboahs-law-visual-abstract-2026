@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeboah's Law - Visual Abstract for JMP</title>
+    <style>
+        @page { size: A4 landscape; margin: 0; }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: white;
+            color: #000;
+            width: 297mm;
+            height: 210mm;
+        }
+     .container {
+            border: 4px solid #003366;
+            padding: 20px;
+            height: 180mm;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            text-align: center;
+            color: #003366;
+            font-size: 28px;
+            margin: 0 0 5px 0;
+            font-weight: bold;
+        }
+        h2 {
+            text-align: center;
+            color: #444;
+            font-size: 16px;
+            margin: 0 0 15px 0;
+            font-weight: normal;
+        }
+     .main-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 20px;
+            flex-grow: 1;
+        }
+     .left-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+     .equation-box {
+            background: #e3f2fd;
+            border: 2px solid #003366;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+     .eq-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 5px;
+        }
+     .eq-main {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+     .eq-rule {
+            font-size: 18px;
+            margin-top: 8px;
+        }
+     .pass { color: #1b5e20; background: #c8e6c9; padding: 3px 8px; border-radius: 4px; }
+     .fail { color: #b71c1c; background: #ffcdd2; padding: 3px 8px; border-radius: 4px; }
+     .icons-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 10px;
+        }
+     .icon-item {
+            text-align: center;
+        }
+     .icon { font-size: 32px; }
+     .icon-label { font-size: 12px; font-weight: bold; color: #003366; }
+     .arrow { font-size: 24px; color: #666; }
+     .right-panel {
+            display: flex;
+            flex-direction: column;
+        }
+     .table-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color: #003366;
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+        }
+        th, td {
+            border: 1px solid #666;
+            padding: 6px 4px;
+            text-align: center;
+        }
+        th {
+            background: #003366;
+            color: white;
+            font-size: 10px;
+        }
+     .pass-row { background: #e8f5e9; }
+     .fail-row { background: #ffebee; }
+     .threshold-row { background: #fff8e1; }
+     .footer {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #003366;
+            font-weight: bold;
+            border-top: 2px solid #003366;
+            padding-top: 8px;
+        }
+     .ky-note {
+            font-size: 11px;
+            text-align: center;
+            margin-top: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YEBOAH'S LAW: FIRST DIMENSIONLESS THRESHOLD FOR DYNAMIC CUTTING</h1>
+        <h2>From Technical SHS for the Deaf, Mampong-Akuapem to Journal of Manufacturing Processes</h2>
+
+        <div class="main-grid">
+            <div class="left-panel">
+                <div class="equation-box">
+                    <div class="eq-title">YEBOAH'S LAW</div>
+                    <div class="eq-main">η = k<sub>Y</sub> × [mv² / (2dτ<sub>ult</sub>A)]</div>
+                    <div class="eq-rule">
+                        <span class="pass">IF η ≥ 1 → SUCCESS</span> &nbsp;&nbsp;
+                        <span class="fail">IF η < 1 → FAIL</span>
+                    </div>
+                    <div class="ky-note">k<sub>Y</sub> = Yeboah Constant: Tool-material energy recovery efficiency</div>
+                </div>
+
+                <div class="icons-box">
+                    <div class="icon-item">
+                        <div class="icon">🔨</div>
+                        <div class="icon-label">Merchant 1945<br>Force F<sub>c</sub></div>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="icon-item">
+                        <div class="icon">⚡</div>
+                        <div class="icon-label">Yeboah 2026<br>Threshold η</div>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="icon-item">
+                        <div class="icon">✅❌</div>
+                        <div class="icon-label">CAD/CAM<br>PASS/FAIL</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="table-title">Table 2: Validation Across 6 Orders of Magnitude in Energy</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tool / Material</th>
+                            <th>m [kg]</th>
+                            <th>v [m/s]</th>
+                            <th>Result</th>
+                            <th>η</th>
+                            <th>k<sub>Y</sub></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pass-row">
+                            <td><b>Waterjet / Steel</b></td>
+                            <td>0.005</td>
+                            <td>900</td>
+                            <td>Full Cut</td>
+                            <td><b>284.76</b></td>
+                            <td><b>0.90</b></td>
+                        </tr>
+                        <tr class="threshold-row">
+                            <td><b>Chisel / Concrete</b></td>
+                            <td>1.5</td>
+                            <td>5.0</td>
+                            <td>Clean Split</td>
+                            <td><b>1.07</b></td>
+                            <td><b>0.57</b></td>
+                        </tr>
+                        <tr class="fail-row">
+                            <td><b>Razor / Pine</b></td>
+                            <td>0.001</td>
+                            <td>12.0</td>
+                            <td>Blade Stick</td>
+                            <td><b>0.15</b></td>
+                            <td><b>0.10</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="ky-note">
+                    k<sub>Y</sub> = 0.90 shows 90% energy recovery for waterjet. k<sub>Y</sub> = 0.10 shows 10% recovery for razor due to elastic buckling.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Merchant gave us FORCE. Atkins gave us TOUGHNESS. Yeboah gives us the PASS or FAIL.<br>
+            C.K. Yeboah | Technical Senior High School for the Deaf, Mampong-Akuapem, Ghana
+        </div>
+    </div>
+</body>
+</html>
